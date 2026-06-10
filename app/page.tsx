@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top_left,_#dbeafe,_transparent_32%),linear-gradient(135deg,_#eef2ff_0%,_#f8fafc_45%,_#fef3c7_100%)] px-6 py-10 font-sans dark:bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.35),_transparent_32%),linear-gradient(135deg,_#020617_0%,_#111827_48%,_#312e81_100%)]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(244,114,182,0.28),_transparent_28%)] dark:bg-[radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.22),_transparent_30%)]" />
+      <main className="relative flex min-h-[min(720px,90vh)] w-full max-w-3xl flex-col items-center justify-between rounded-[2rem] border border-white/70 bg-white/80 px-10 py-24 shadow-2xl shadow-indigo-200/50 backdrop-blur dark:border-white/10 dark:bg-slate-950/70 dark:shadow-black/40 sm:items-start sm:px-16">
         <Image
           className="dark:invert"
           src="/next.svg"
