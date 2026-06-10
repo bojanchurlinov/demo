@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+/**
+ * Render the homepage layout with a decorative gradient background, centered content card, brand logo, informational text with Links to Templates and Learning, and two call-to-action buttons for Deploy and Documentation.
+ *
+ * @returns The React element representing the homepage UI.
+ */
 export default function Home() {
   return (
     <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top_left,_#dbeafe,_transparent_32%),linear-gradient(135deg,_#eef2ff_0%,_#f8fafc_45%,_#fef3c7_100%)] px-6 py-10 font-sans dark:bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.35),_transparent_32%),linear-gradient(135deg,_#020617_0%,_#111827_48%,_#312e81_100%)]">
